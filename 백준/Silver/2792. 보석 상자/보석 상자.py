@@ -15,7 +15,7 @@ def solution():
             st = mid + 1
         else:  # 학생 수가 n 이하면 학생 수를 늘리기 위해 mid 값 내리기
             ed = mid - 1
-            ans = mid  # ans 계속 갱신하기
+            ans = mid  # 학생이 모두 보석을 받지 못해도 상관 없음 -> n 이하면 갱신
     return ans
 
 
