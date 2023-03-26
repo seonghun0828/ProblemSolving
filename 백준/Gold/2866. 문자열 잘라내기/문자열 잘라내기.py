@@ -4,6 +4,9 @@ input = sys.stdin.readline
 
 
 def solution():
+    # 아래 위로 단어를 만들면 번거롭기 때문에 table을 왼쪽으로 90도 돌림.
+    # 돌린 table을 사용하면 [st : ed] 문법을 사용해 단어 만들어내기가 편함.
+    # 가장 위의 행을 지우는 건 row_idx를 1부터 r-1까지 반복하는 것으로 구현.
     global table
     inputs()
     turn_left_90()
