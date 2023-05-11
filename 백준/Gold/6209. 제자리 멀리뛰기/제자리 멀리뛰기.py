@@ -11,7 +11,7 @@ def solution():
         mid = int((lo + hi) / 2)
         if get_step_cnt_by(mid) >= n - m:  # 밟은 돌섬의 수가 n - m 이상
             lo = mid + 1
-            ans = max(ans, mid)
+            ans = mid
         else:  # 밟은 돌섬의 수가 n - m 미만
             hi = mid - 1
     return ans
